@@ -1,0 +1,22 @@
+Startprogram
+
+Variable:
+    Int32 aaaa1, bbbb2, cyca1, cycb2, xval3;
+
+Startblock
+
+  Scan(aaaa1)
+  Scan(bbbb2)
+
+  For cyca1 =: aaaa1 To bbbb2 Do
+      Print(cyca1 ** cyca1)
+
+  xval3 =: 0
+
+  For cyca1 =: 1 To aaaa1 Do
+      For cycb2 =: 1 To bbbb2 Do
+          xval3 =: xval3 ++ 1
+
+  Print(xval3)
+
+Endblock
