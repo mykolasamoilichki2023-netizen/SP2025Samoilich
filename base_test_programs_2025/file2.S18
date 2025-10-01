@@ -1,0 +1,39 @@
+Startprogram
+
+Variable:
+    Int32 aaaa1, bbbb2, cccc3, maxm4;
+
+Startblock
+
+  Scan(aaaa1)
+  Scan(bbbb2)
+  Scan(cccc3)
+
+  If (aaaa1 Gr= bbbb2 And aaaa1 Gr= cccc3) {
+      maxm4 =: aaaa1
+  } Else If (bbbb2 Gr= aaaa1 And bbbb2 Gr= cccc3) {
+      maxm4 =: bbbb2
+  } Else {
+      maxm4 =: cccc3
+  }
+  Print(maxm4)
+
+  If (aaaa1 Eq bbbb2 And aaaa1 Eq cccc3 And bbbb2 Eq cccc3) {
+      Print(1)
+  } Else {
+      Print(0)
+  }
+
+  If (Not (aaaa1 Gr= 0) Or Not (bbbb2 Gr= 0) Or Not (cccc3 Gr= 0)) {
+      Print(-1)
+  } Else {
+      Print(0)
+  }
+
+  If (aaaa1 Gr= (bbbb2 ++ cccc3)) {
+      Print(10)
+  } Else {
+      Print(0)
+  }
+
+Endblock
