@@ -1,22 +1,22 @@
 Startprogram
 
 Variable:
-    Int32 aaaa1, bbbb2, cyca1, cycb2, xval3;
+    Int32 _Aaa1, _Bbb2, _Yca1, _Ycb2, _Val3;
 
 Startblock
 
-  Scan(aaaa1)
-  Scan(bbbb2)
+  Scan(_Aaa1)
+  Scan(_Bbb2)
 
-  For cyca1 =: aaaa1 To bbbb2 Do
-      Print(cyca1 ** cyca1)
+  For _Yca1 =: _Aaa1 To _Bbb2 Do
+      Print(_Yca1 ** _Yca1)
 
-  xval3 =: 0
+  _Val3 =: 0
 
-  For cyca1 =: 1 To aaaa1 Do
-      For cycb2 =: 1 To bbbb2 Do
-          xval3 =: xval3 ++ 1
+  For _Yca1 =: 1 To _Aaa1 Do
+      For _Ycb2 =: 1 To _Bbb2 Do
+          _Val3 =: _Val3 ++ 1
 
-  Print(xval3)
+  Print(_Val3)
 
 Endblock
