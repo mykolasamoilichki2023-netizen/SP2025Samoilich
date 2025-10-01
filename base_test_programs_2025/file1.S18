@@ -1,23 +1,19 @@
 Startprogram
-
-Variable:
-    Int32 aaaa1, bbbb2, xxxx3, yyyy4;
-
 Startblock
+Variable INT32 _Abc1 , _Abc2 , _Xyz1 , _Xyz2 ;
+  Scan ( _Abc1 )
+  Scan ( _Abc2 )
+  
+  Print ( _Abc1 + _Abc2 )
+  Print ( _Abc1 - _Abc2 )
+  Print ( _Abc1 * _Abc2 )
+  Print ( _Abc1 DIV _Abc2 )
+  Print ( _Abc1 MOD _Abc2 )
 
-  Scan(aaaa1)
-  Scan(bbbb2)
+   (_Abc1 - _Abc2) * 10 + (_Abc1 + _Abc2) DIV 10 : =  _Xyz1
+    _Xyz1 + _Xyz1 MOD 10 : =  _Xyz2
 
-  Print(aaaa1 ++ bbbb2)
-  Print(aaaa1 -- bbbb2)
-  Print(aaaa1  bbbb2)
-  Print(aaaa1 Div bbbb2)
-  Print(aaaa1 Mod bbbb2)
-
-  xxxx3 =: (aaaa1 -- bbbb2)  10 ++ (aaaa1 ++ bbbb2) Div 10
-  yyyy4 =: xxxx3 ++ xxxx3 Mod 10
-
-  Print(xxxx3)
-  Print(yyyy4)
+  Print ( _Xyz1 )
+  Print ( _Xyz2 )
 
 Endblock
