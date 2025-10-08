@@ -10,11 +10,11 @@ Startblock
   Scan(_Ccc3)
 
   If (_Aaa1 Gr= _Bbb2 And _Aaa1 Gr= _Ccc3) {
-      maxm4 =: _Aaa1
+      _Aaa1 := maxm4
   } Else If (_Bbb2 Gr= _Aaa1 And _Bbb2 Gr= _Ccc3) {
-      maxm4 =: _Bbb2
+      _Bbb2 := maxm4
   } Else {
-      maxm4 =: _Ccc3
+      _Ccc3 := maxm4
   }
   Print(maxm4)
 
