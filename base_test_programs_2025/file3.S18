@@ -8,14 +8,14 @@ Startblock
   Scan(_Aaa1)
   Scan(_Bbb2)
 
-  _Aaa1 To _Bbb2 Do := For _Yca1
+  _Aaa1 To _Bbb2 Do =: For _Yca1
       Print(_Yca1 ** _Yca1)
 
-  0  := _Val3
+  0  =: _Val3
 
-  For 1 To _Aaa1 Do := _Yca1
-      For  1 To _Bbb2 Do := _Ycb2
-           _Val3 ++ 1 := _Val3
+  For 1 To _Aaa1 Do =: _Yca1
+      For  1 To _Bbb2 Do =: _Ycb2
+           _Val3 ++ 1 =: _Val3
 
   Print(_Val3)
 
