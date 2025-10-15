@@ -1,6 +1,6 @@
 Startprogram
 
-Variable:
+Variable
     Int32 _Aaa1, _Bbb2, _Ccc3, maxm4;
 
 Startblock
