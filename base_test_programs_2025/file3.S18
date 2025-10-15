@@ -1,6 +1,6 @@
 Startprogram
 
-Variable:
+Variable
     Int32 _Aaa1, _Bbb2, _Yca1, _Ycb2, _Val3;
 
 Startblock
@@ -8,7 +8,7 @@ Startblock
   Scan(_Aaa1)
   Scan(_Bbb2)
 
-  _Aaa1 To _Bbb2 Do =: For _Yca1
+ For _Yca1 =: _Aaa1 To _Bbb2 Do
       Print(_Yca1 ** _Yca1)
 
   0  =: _Val3
