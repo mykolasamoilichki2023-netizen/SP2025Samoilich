@@ -1,32 +1,32 @@
 Startprogram
 Startblock
-Variable Int32 _Aaa1, _Bbb2, _Ccc3, _Maxm4;
-  Scan(_Aaa1);
-  Scan(_Bbb2);
-  Scan(_Ccc3);
+Variable Int32 _aaa1, _bbb2, _ccc3, _maxm4;
+  Scan(_aaa1);
+  Scan(_bbb2);
+  Scan(_ccc3);
 
-If (_Aaa1 Gr _Bbb2 And _Aaa1 Gr _Ccc3) {
-      _Aaa1 =: _Maxm4;
-  } Else If (_Bbb2 Gr _Aaa1 And _Bbb2 Gr _Ccc3) {
-      _Bbb2 =: _Maxm4;
+If (_aaa1 Gr _bbb2 And _aaa1 Gr _ccc3) {
+      _aaa1 =: _maxm4;
+  } Else If (_bbb2 Gr _aaa1 And _bbb2 Gr _ccc3) {
+      _bbb2 =: _maxm4;
   } Else {
-      _Ccc3 =: _Maxm4;
+      _ccc3 =: _maxm4;
   }
   Print(maxm4);
 
- If (_Aaa1 Eq _Bbb2) And (_Aaa1 Eq _Ccc3) And (_Bbb2 Eq _Ccc3) {
+ If (_aaa1 Eq _bbb2) And (_aaa1 Eq _ccc3) And (_bbb2 Eq _ccc3) {
       Print(1);
   } Else {
       Print(0);
   }
 
- If (_Aaa1 Ls 0) Or (_Bbb2 Ls 0) Or (_Ccc3 Ls 0) {
+ If (_aaa1 Ls 0) Or (_bbb2 Ls 0) Or (_ccc3 Ls 0) {
       Print(-1);
   } Else {
       Print(0);
   }
     
- If Not (_Aaa1 Ls (_Bbb2 ++ _Ccc3)) {
+ If Not (_aaa1 Ls (_bbb2 ++ _ccc3)) {
       Print(10);
   } Else {
       Print(0);
